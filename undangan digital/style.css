@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-size: 1.2rem;
+    color: #c0392b;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+.date, .time, .venue {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.countdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #f39c12;
+    color: white;
+    padding: 12px;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+button {
+    background: #e67e22;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #d35400;
+    transform: scale(1.02);
+}
+
+/* Style form RSVP */
+.rsvp-form {
+    margin-top: 20px;
+    text-align: left;
+}
+.rsvp-form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+.rsvp-form input, 
+.rsvp-form select, 
+.rsvp-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}
+.rsvp-form textarea {
+    border-radius: 20px;
+    height: 80px;
+    resize: vertical;
+}
+#rsvpStatus {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    z-index: 100;
+}
+
+@media (max-width: 480px) {
+    h2 { font-size: 1.5rem; }
+    .countdown { font-size: 1.2rem; }
+}
